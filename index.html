@@ -12,15 +12,17 @@
         <a href="" class ="logo">Salma <span> Khalil</span></a>
 
         <i class='bx bx-menu' id="icon"></i>
-        <nav class="navbar">
-            <a href="" class="active"> Home </a>
-            <a href="about.html" class=""> About </a>
-            <a href="" class=""> Projects </a>
-            <a href="" class=""> Resume </a>
-            <a href="" class=""> Contact </a>
-        </nav>
+        <div class="navbardiv">
+            <nav class="navbar">
+                <a href="#Home" class="active"> Home </a>
+                <a href="#about"> About </a>
+                <a href="#projects"> Projects </a>
+                <a href="#resume"> Resume </a>
+                <a href="#contact"> Contact </a>
+            </nav>
+        </div>
     </header>
-    <section id = "Home">
+    <section id = "Home" class="Home">
         <div class="main-content">
            <div class="intro">
             <h1>“Most of the old moles I know with they had listened less to their fears and more to their dreams.”</h1>
@@ -28,11 +30,11 @@
 
            </div>
            <div class="icon-photo">
-            <img src="Personal photo.jpg" alt="Photo">
+            <img src="personal photo.jpeg" alt="Photo">
             <div class="social-icons">
-                <a href=""><i class='bx bxl-linkedin-square' ></i> </a>
-                <a href=""><i class='bx bxl-github' ></i> </a>
-                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.linkedin.com/in/salma-elsayed-khalil-045a40229/"><i class='bx bxl-linkedin-square' ></i> </a>
+                <a href="https://github.com/salmaKahlil"><i class='bx bxl-github' ></i> </a>
+                <a href="https://www.instagram.com/salma.elsayed.1?igsh=MTA1dmNlcnNmeTJkeg%3D%3D&utm_source=qr"><i class='bx bxl-instagram-alt' ></i></a>
             </div>
          </div>
         </div>
@@ -40,7 +42,7 @@
     </section> 
     <!-- Starting a new section "About me"  -->
     <section id="about" class ="about">
-        <h2 class="title"> About </h2>
+        <h2 class="title"> About <span>Me</span></h2>
         <div class="about-content">
             <div class="about-text">
                 <div class="about-title">
@@ -56,57 +58,73 @@
             <div class="projects-box">
               <div class="dot"></div>
             <!-- /// -->
+                <h3> Digit Analysis Engine </h3>
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    
+                    <p>  The engine receives an arbitrarily large stream of  LARGE integers and a digit as inputs. For each integer, the engine does CPU-intensive computation looking for the number of occurances of this digit in a range of 0 to this LARGE integer. </p> <br><br>
+                   <p> <span class="tools">Tools:</span> Java, JUnit, Proto Buffer, gRPC, and Design Patterns, OOP, Git, and GitHub </p>
                 </div>
             </div>
             <div class="projects-box">
                 <div class="dot"></div>
             <!-- /// -->
+                 <h3> Pipelined RISC-V processor </h3>
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    
+                    <p> This project involves the development of a RISC-V processor adhering to the RV32I base
+                        integer instruction set specifications. The implementation employs a pipelined architecture with
+                        proper hazard handling across stages, addressing data and control hazards. A single memory,
+                        serving both data and instructions, is used and is designed to be single-ported and
+                        byte-addressable. </p><br><br>
+                        <p> <span class="tools">Tools:</span> Verilog HDL, Vivado, and Nexys A7 kit </p>
                 </div>
             </div>
             <div class="projects-box">
                 <div class="dot"></div>
             <!-- /// -->
+                <h3> Search Engine </h3>
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    <p> This project involves the development of a search engine algorithm using graphs. The engine displays the followings: page rankes, web pages scores, and keyword-based search results.</p><br><br>
+                    <p><span class="tools">Tools:</span>  C++, Graph Algorithm, and CSV handling </p>
                 </div>
             </div>
             <div class="projects-box">
                 <div class="dot"></div>
             <!-- /// -->
+                <h3> Calculator using FBGA Board </h3>
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    <p>The project involves the development of a calculator on a Basys 3 FPGA board using Verilog HDL. This calculator encompasses a wide range of mathematical functions, including addition, subtraction, multiplication, and division. Additionally, it features error-handling capabilities, such as identifying and managing division by zero scenarios while ensuring precise rounding.</p><br><br>
+                    <p> <span class="tools">Tools:</span>  FBGA programming and Verilog HDL</p>
+
                 </div>
             </div>
             <div class="projects-box">
                 <div class="dot"></div>
             <!-- /// -->
+                <h3> Tomasulo Simulator </h3>
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    
+                    <p> This project aims to create an educational simulation of the Tomasulo algorithm, which is widely used in computer hardware for scheduling and executing instructions out of order. Developed in C++, the simulation provides an interactive environment for users to explore and grasp the intricacies of this algorithm. </p><br><br>
+                    <p> <span class="tools">Tools:</span>  C++, File Handling, and GUI</p>
                 </div>
             </div>
             <div class="projects-box">
+                <h3> RV32IC Disassembler</h3> 
                 <div class="dot"></div>
-          
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    <p> This project involves developing a command-line RV32IC disassembler, which translates machine code into assembly language for the RISC-V architecture. The disassembler reads a binary file containing the machine code of a program's instructions, located at memory address 0x00000000. It decodes each machine code word into a valid RV32IC instruction and outputs the disassembled program using ABI register names. </p><br><br>
+                    <p> <span class="tools">Tools:</span>  C++, OOP, Git, and GitHub</p>
+
                 </div>
             </div>
             <div class="projects-box">
                 <div class="dot"></div>
             <!-- /// -->
+                <h3> GUI application  </h3>
                 <div class="projects-info">
-                    <h3> Project 1 </h3>
-                    <p> Description of the project </p>
+                    
+                    <p> The project entails the development of a Graphical User Interface (GUI) application that allows users to manipulate the size, shape, and color of an icon using various controls. The GUI features a JSlider for adjusting the size of the icon dynamically. Additionally, there are buttons available for users to select different icon types, including Rectangle, Eclipse, and Triangle. Furthermore, three additional buttons enable users to change the color of the icon to Red, Blue, or Yellow </p><br><br>
+                    <p> <span class="tools">Tools:</span> Java, Java Reflection, Model-View-Controller (MVC) Pattern, and OOP </p>
                 </div>
             </div>
         </div>
@@ -115,7 +133,81 @@
     <!-- Starting a new section Resume-->
     <section id="resume" class ="resume">
         <h2 class="title"> Resume </h2>
-        <div class="resume-content"></div>
+        <!-- a button to view my resume in a new page -->
+        <div class="container">
+            <div class="vertical-center">
+                <button onclick="window.open('Salma Elsayed Khalil-Resume.pdf', '_black')" class="button"> Click To View My Resume</button>
+            </div>
+        </div>
+    </section>
+    <!-- Starting a new section "Contact"  -->
+    <section id="contact" class ="contact">
+        <h2 class="title"> Contact <span>Me</span> </h2>
+        <form>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" class="field" placeholder="Full Name" required>
+                    <input type="email" class="field" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" class="field" placeholder="Phone Number" required>
+                    <input type="text" class="field" placeholder="Subject" required>
+                </div>
+                <div class="input-group2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" ></textarea>
+                    <input type="submit" value="Send" class="btn">
+                </div>
+
+
+
+            </div>
+
+        </form>
+
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/salma-elsayed-khalil-045a40229/"><i class='bx bxl-linkedin-square' ></i> </a>
+            <a href="https://github.com/salmaKahlil"><i class='bx bxl-github' ></i> </a>
+            <a href="https://www.instagram.com/salma.elsayed.1?igsh=MTA1dmNlcnNmeTJkeg%3D%3D&utm_source=qr"><i class='bx bxl-instagram-alt' ></i></a>
+        </div>
+
+        </div>
+        <ul class = "list">
+            <li>
+                <a href="#"> FAQ </a>
+
+            </li>
+            <li>
+                <a href="#Home"> Home </a>
+                
+            </li>
+            <li>
+                <a href="#about"> About </a>
+                
+            </li>
+            <li>
+                <a href="#projects"> Projects </a>
+                
+            </li>
+            <li>
+                <a href="#resume"> Resume </a>
+                
+            </li>
+            <li>
+                <a href="#contact"> Contacts </a>
+                
+            </li>
+
+        </ul>
+        <div class="copyright">
+            &copy; Salma Khalil | All Rights Reserved
+
+        </div>
+        </footer>
+    </section>
+    <script src="script.js"></script>
 
 
 
