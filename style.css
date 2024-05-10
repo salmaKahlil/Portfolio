@@ -535,6 +535,7 @@ form{
     }
     .projects-box p{
         font-size: 1.5rem;
+        text-align: left;
     }
     .resume{
         padding-bottom: 7rem;
@@ -596,6 +597,7 @@ form{
     }
     .about-title p{
         font-size: 1.8rem;
+        text-align: center;
     } 
     .title{
         font-size: 4rem;
